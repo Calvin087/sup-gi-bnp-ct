@@ -28,24 +28,29 @@ const PokemonPage = ({ data }: Props) => {
               width={400}
               className="mix-blend-luminosity mb-10"
             />
-            {data.images.frontDefaultAnimated ? (
-              <Image
-                unoptimized
-                src={data.images.frontDefaultAnimated}
-                alt={data.name}
-                height={90}
-                width={90}
-                className="mix-blend-luminosity absolute top-[42%] left-[45%] -translate-x-1/2 -translate-y-1/2"
-              />
-            ) : (
-              <Image
-                src={data.images.frontDefault}
-                alt={data.name}
-                height={200}
-                width={200}
-                className="mix-blend-luminosity absolute top-[45%] left-[45%] -translate-x-1/2 -translate-y-1/2"
-              />
-            )}
+            <div
+              id="image-clip"
+              className="w-[239px] h-[157px] absolute top-[41.5%] left-[46%] -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden"
+            >
+              {data.images.frontDefaultAnimated ? (
+                <Image
+                  unoptimized
+                  src={data.images.frontDefaultAnimated}
+                  alt={data.name}
+                  height={90}
+                  width={80}
+                  className="mix-blend-luminosity absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+                />
+              ) : (
+                <Image
+                  src={data.images.frontDefault}
+                  alt={data.name}
+                  height={200}
+                  width={200}
+                  className="mix-blend-luminosity absolute top-[45%] left-[45%] -translate-x-1/2 -translate-y-1/2"
+                />
+              )}
+            </div>
           </div>
           <div className="xl:row-start-2">
             <QueryBreadCrumb />

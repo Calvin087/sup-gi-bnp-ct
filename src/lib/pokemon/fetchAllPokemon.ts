@@ -25,7 +25,7 @@ export const fetchAllPokemon = async (
 
   return {
     pokemon: allEnrichedPokemonData,
-    generations: allGenerationsData,
-    types: allTypesData,
+    generations: [...new Set(allGenerationsData)],
+    types: [...new Set(allTypesData)],
   };
 };

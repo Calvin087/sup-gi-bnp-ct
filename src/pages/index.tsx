@@ -117,10 +117,11 @@ export default function Home({ data }: Props) {
 
 export const getStaticProps = async () => {
   const ONE_DAY_IN_SECONDS = 86400;
+  const isProduction = process.env.NODE_ENV === "production";
 
   try {
-    const limit = 400;
-    const totalItems = 100;
+    const limit = isProduction ? 400 : 10;
+    const totalItems = isProduction ? 1302 : 10;
 
     const { pokemon, generations, types } = await fetchAllPokemon(
       totalItems,
