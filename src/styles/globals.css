@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #a0a840;
+  --foreground: #2a3603;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +18,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+  TODO: scroll bar styling is inconsistent
+  consider removing this completely.
+*/
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #405010;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #708028;
+  border-radius: 10px;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #405010 #708028;
 }
