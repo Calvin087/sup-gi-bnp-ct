@@ -1,40 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# View Project Online
 
-## Getting Started
+[Visit the deployed app here](https://sup-gi-bnp-ct.vercel.app/)
 
-First, run the development server:
+`https://sup-gi-bnp-ct.vercel.app/`
 
-```bash
-npm run dev
+# Tests
+
+To run the Pokemon Utils / Filtering sample tests:
+
+```
+npm run test
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run test:watch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Prod Mode
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run the production app with all 1302 pokemon displayed
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+npm run build
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+| ![Screenshot 2024-12-15 at 06 22 11](https://github.com/user-attachments/assets/9c702eb0-3914-4553-8e1f-13c0ede94246) | ![Screenshot 2024-12-15 at 06 21 58](https://github.com/user-attachments/assets/3311d5a9-7b8a-4b5b-9788-831845cbc9c4) |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Dev Mode
 
-## Learn More
+To view the project in dev mode with a sample of 10 pokemon:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```
+npm run dev
+```
