@@ -15,6 +15,7 @@ const PokemonList = ({ filteredPokemon }: Props) => {
             <Link
               href={`/pokemon/${name}`}
               className="group-hover:text-[#d0d058]"
+              prefetch
             >
               <div className="flex justify-between items-end ">
                 {sentenceCaseName(name)}

@@ -12,7 +12,7 @@ const EvolutionImages = ({ evolutions, name }: Props) => {
     <>
       <div className="flex justify-start gap-4">
         {evolutions?.[0]?.image && (
-          <Link href={`/pokemon/${evolutions[0].name}`}>
+          <Link href={`/pokemon/${evolutions[0].name}`} prefetch>
             <Image
               src={evolutions[0].image}
               alt={evolutions[0].name}
@@ -26,7 +26,7 @@ const EvolutionImages = ({ evolutions, name }: Props) => {
         )}
 
         {evolutions?.[1]?.image && (
-          <Link href={`/pokemon/${evolutions[1].name}`}>
+          <Link href={`/pokemon/${evolutions[1].name}`} prefetch>
             <Image
               src={evolutions[1].image}
               alt={evolutions[1].name}
@@ -40,7 +40,7 @@ const EvolutionImages = ({ evolutions, name }: Props) => {
         )}
 
         {evolutions?.[2]?.image && (
-          <Link href={`/pokemon/${evolutions[2].name}`}>
+          <Link href={`/pokemon/${evolutions[2].name}`} prefetch>
             <Image
               src={evolutions[2].image}
               alt={evolutions[2].name}
